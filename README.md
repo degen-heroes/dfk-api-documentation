@@ -273,6 +273,7 @@ Query for heroes.
   }
 ]
 ```
+</details>
 
 ## Heroes Renting
 
