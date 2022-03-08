@@ -31,7 +31,7 @@ All API requests are using POST to and pass along pagination and filtering param
 
 ## Heroes
 
-Query for heroes and sales of heroes.
+Query for heroes.
 
 * POST `/query_heroes`
 
@@ -101,10 +101,10 @@ Query for heroes and sales of heroes.
 
 ### Result Sample of Heroes
 
-
 <details>
   <summary><span style="font-size: 1.5em;">Result Sample of Heroes:</span></summary>
 <br />
+
 ```json
 [
     {
@@ -232,12 +232,53 @@ Query for heroes and sales of heroes.
 ```
 </details>
 
+## Heroes Sales
+
+* POST `/query_saleauctions`
+
+### Result Sample of Selling Heroes
+
+<details>
+  <summary><span style="font-size: 1.5em;">Result Sample of Selling Heroes:</span></summary>
+<br />
+
+```json
+[
+  {
+    "id": "49949",
+    "seller": "0x7C469401BA1dae4814Ae9E6c8F5283EeC1Bab592",
+    "tokenid": "15918",
+    "startingprice": "165000000000000000000",
+    "endingprice": "165000000000000000000",
+    "duration": "60",
+    "startedat": "1636951336",
+    "winner": null,
+    "endedat": "1636951363",
+    "open": false,
+    "purchaseprice": null,
+    "hero_id": "15918",
+    "hero_mainclass": "5",
+    "hero_rarity": 2,
+    "hero_shiny": false,
+    "seller_name": "oobie",
+    "seller_picid": null,
+    "seller_nftid": "3",
+    "seller_collectionid": "0",
+    "seller_address": "0x7C469401BA1dae4814Ae9E6c8F5283EeC1Bab592",
+    "winner_name": null,
+    "winner_picid": null,
+    "winner_nftid": null,
+    "winner_collectionid": null,
+    "winner_address": null
+  }
+]
+```
+
 ## Heroes Renting
 
 * POST `/query_assistauctions`
 
 ### Querying Examples for Renting Heroes
-
 
 <details>
   <summary><span style="font-size: 1.5em;">Query for past rents:</span></summary>
